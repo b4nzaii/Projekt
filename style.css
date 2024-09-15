@@ -1,46 +1,111 @@
 /* Skapa en media quary*/
 /*Skapa flex eller grid layout */
+body {
+  text-align: center;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-image: url(bilder/pexels-jplenio-1103970.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
 
-*{
-    text-align:center;
+
+p {
+  color: rgb(29, 0, 108)
 }
-body{
-    min-height:100vh;
-    font-family:Arial, Helvetica, sans-serif;
-    line-height: 1.6;
-    margin:0;
-    padding:0;
-    background-image:url(bilder/nora.jpg);
-    background-repeat:no-repeat;
-    background-position:center;
-    background-attachment:fixed;
-    background-size:cover;
+
+h1 {
+  color: rgb(0, 94, 255);
+  font-size: 2em;
 }
-p{
-    color:rgb(29, 0, 108)
+
+header {
+  padding: 2em;
 }
-h1{
-    color:rgb(0, 94, 255);
-    font-size:2em;
+
+header img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  display: block;
+  margin: 0 auto;
 }
-footer{
-    border: 1px;
-    color:rgb(249, 4, 106)
+
+footer {
+  border: 1px;
+  color: rgb(249, 4, 106)
 }
-nav{
-    background-color:#dc0f0f;
-    color: rgb(130, 20, 20);
-    padding: 15px;
-    text-align:center;
+
+nav {
+  background-color: #9b089b;
+  color: rgb(130, 20, 20);
+  padding: 15px;
+  text-align: center;
 }
-nav ul{
-    margin:0;
-    padding:0;
+
+nav ul {
+  margin: 0;
+  display: flex;
+  padding: 1em;
+  justify-content: space-around;
 }
-nav ul li{
-    display:inline;
-    font-size:14px;
+
+nav ul li {
+  margin: 0;
 }
-nav ul li a:hover{
-    text-decoration:underline;
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1em;
 }
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+
+section {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #333;
+  color: #fff;
+}
+
+footer p {
+  margin: 10px 0;
+}
+
+footer a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+/*Media queries*/
+/*Börjar med för små skärmar upp till 480px*/
+
+@media (max-width:480px) {
+  header img {}
+
+  nav ul {}
+
+  section {}
+
+  footer {}
+}
+
+/* För större skärmar*/
