@@ -151,3 +151,33 @@ footer img.socialamedia-loggor:hover {
 /*Måste anpassa storlek för viewportens bredd*/
 
 /*För mellanstora skärmar*/
+@media (min-width: 980px) {
+
+  header img {
+    width: 10vw;
+    /*10% av skärmens bredd*/
+  }
+
+  /*Lägger till horisontell layout och centrerar menyn*/
+  nav ul {
+    flex-direction: row;
+    justify-content: center;
+    gap: 2em;
+  }
+
+  section {
+    max-width: 50%;
+    /*Sektionen ska täcka max 50% */
+    margin: auto;
+    padding: 0;
+  }
+
+  /**större storlek på loggorna samt justera footern*/
+  footer a {
+    font-size: 2em;
+  }
+
+  footer {
+    padding: 2em;
+  }
+}
