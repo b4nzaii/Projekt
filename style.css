@@ -1,5 +1,8 @@
+/*börja med att styla body och få texten centrerad samt fixa bakgrundsbilden
+samt header bilden som jag vill ha rund likt på ett riktigt CV*/
+/*Måste ha korrekta färger för AA*/
 /* Skapa en media quary*/
-/*Skapa flex eller grid layout */
+/*innehåll flex och eller grid layout */
 body {
   text-align: center;
   min-height: 100vh;
@@ -96,16 +99,31 @@ footer a {
 }
 
 /*Media queries*/
-/*Börjar med för små skärmar upp till 480px*/
+/*För mobiltelefoner*/
+@media (max-width: 480px) {
+  header img {
+    width: 30vw;
+    /*30% av skärmens bredd*/
+  }
 
-@media (max-width:480px) {
-  header img {}
+  /*Skapar en column nav så att det kan visas vertikalt*/
+  /*samt lite mellanrum bland menylänkarna*/
+  nav ul {
+    flex-direction: column;
+    gap: 1em;
+  }
 
-  nav ul {}
+  section {
+    margin: 1em;
+    padding: 1em;
+  }
 
-  section {}
-
-  footer {}
+  /*Ge lite mer utrymme även i footern*/
+  footer {
+    padding: 1.5em;
+  }
 }
 
-/* För större skärmar*/
+/*Måste anpassa storlek för viewportens bredd*/
+
+/*För mellanstora skärmar*/
