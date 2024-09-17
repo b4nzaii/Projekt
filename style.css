@@ -3,6 +3,9 @@ samt header bilden som jag vill ha rund likt på ett riktigt CV*/
 /*Måste ha korrekta färger för AA*/
 /* Skapa en media quary*/
 /*innehåll flex och eller grid layout */
+
+
+/*Gör mobile first styling i huvudkodningen*/
 body {
   text-align: center;
   min-height: 100vh;
@@ -15,17 +18,25 @@ body {
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('bilder/pexels-jplenio-1103970.jpg');
 }
 
 
 p {
-  color: darkblue;
+  color: rgba(25, 252, 17, 0.637);
   font-size: 1.5em;
 }
 
-h1 {
-  color: rgb(0, 94, 255);
+h1,
+h2,
+h3,
+a {
+  color: #ffffff;
   font-size: 2em;
+}
+
+a:hover {
+  color: #dddddd;
 }
 
 header {
@@ -50,26 +61,27 @@ nav {
   color: rgb(130, 20, 20);
   padding: 0;
   text-align: center;
-  justify-content: space-between;
 }
 
 nav ul {
   margin: 0;
   display: flex;
-  padding: 2;
+  padding: 0;
   justify-content: space-around;
-  font-size: 1.5em;
+  font-size: 2em;
+  flex-direction: column;
+  gap: 1em;
 }
 
 nav ul li {
   margin: 0;
+  font-size: 0.5em;
 }
 
 nav ul li a {
   color: rgb(255, 255, 255);
   text-decoration: none;
   font-weight: bold;
-  font-size: 1em;
 }
 
 nav ul li a:hover {
@@ -92,19 +104,15 @@ footer {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 0.5em;
+  gap: 2em;
 }
 
-
-
-.footer-SM {
-  flex: 1;
-  text-align: center;
-}
 
 /*margin 0 och lägger till lite gap för logo texterna*/
+
 footer a {
-  margin: 0 2em;
+  margin: 0 1em;
+  font-size: 1.2em;
 }
 
 
@@ -123,34 +131,8 @@ footer img.socialamedia-loggor:hover {
 }
 
 /*Media queries*/
-/*För mobiltelefoner*/
-@media (max-width: 480px) {
-  header img {
-    width: 30vw;
-    /*30% av skärmens bredd*/
-  }
-
-  /*Skapar en column nav så att det kan visas vertikalt*/
-  /*samt lite mellanrum bland menylänkarna*/
-  nav ul {
-    flex-direction: column;
-    gap: 1em;
-  }
-
-  section {
-    margin: 1em;
-    padding: 1em;
-  }
-
-  /*Ge lite mer utrymme även i footern*/
-  footer {
-    padding: 1.5em;
-  }
-}
-
-/*Måste anpassa storlek för viewportens bredd*/
-
-/*För mellanstora skärmar*/
+/*Efter lite tips från discord gruppen så gör jag så att "huvudkodningen" är anpassad till mobile
+och så kör jag desktopdesignen i media querys*/
 @media (min-width: 980px) {
 
   header img {
@@ -167,7 +149,7 @@ footer img.socialamedia-loggor:hover {
 
   section {
     max-width: 50%;
-    /*Sektionen ska täcka max 50% */
+    /*Sektionen ska täcka max 50% i desktop versionen*/
     margin: auto;
     padding: 0;
   }
