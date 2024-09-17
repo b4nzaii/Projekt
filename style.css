@@ -21,24 +21,28 @@ body {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('bilder/pexels-jplenio-1103970.jpg');
 }
 
+/*använder mig utav en dark gradient overlay för att lägga till mörkare lager till bakgrundsbilden,
+vilket förbättrar kontrasten på texten så att det syns tydligt*/
 
 p {
   color: rgba(25, 252, 17, 0.637);
   font-size: 1.5em;
   color: white;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  text-shadow: 4px rgba(0, 0, 0, 0.7);
 }
 
 h1,
 h2,
 h3,
 a {
-  color: #ffffff;
-  font-size: 2em;
+  color: white;
+  font-size: 1.5em;
+  font-family: 'Georgia', serif;
+  margin-bottom: 20px;
 }
 
 a:hover {
-  color: #dddddd;
+  color: #fded04;
 }
 
 header {
@@ -46,16 +50,17 @@ header {
 }
 
 header img {
-  border-radius: 40%;
+  border-radius: 50%;
   width: 200px;
   height: 200px;
   display: block;
   margin: 0 auto;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6)
 }
 
 nav {
-  background-color: #79a881;
-  color: rgb(130, 20, 20);
+  background-color: rgba(46, 199, 82, 0.596);
+  color: rgb(241, 231, 231);
   padding: 0;
   text-align: center;
 }
@@ -85,16 +90,9 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
-
-section {
-  margin: 10px;
-  padding: 10px;
-  border-radius: 4px;
-}
-
 footer {
   text-align: center;
-  padding: 10px;
+  padding: 0;
   background: #333;
   color: #fff;
   display: flex;
@@ -116,7 +114,6 @@ footer a {
 footer img.socialamedia-loggor {
   width: 40px;
   height: 40px;
-  display: inline-block;
   vertical-align: middle;
   object-fit: contain;
   transition: transform 0.3s ease;
@@ -147,6 +144,9 @@ footer img.socialamedia-loggor:hover {
   font-size: 1.2em;
 }
 
+section {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1)
+}
 
 /*Media queries*/
 /*Efter lite tips från discord gruppen så gör jag så att "huvudkodningen" är anpassad till mobile
