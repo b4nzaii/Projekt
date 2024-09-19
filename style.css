@@ -1,11 +1,10 @@
 /*börja med att styla body och få texten centrerad samt fixa bakgrundsbilden
 samt header bilden som jag vill ha rund likt på ett riktigt CV*/
 /*Måste ha korrekta färger för AA*/
-/* Skapa en media quary*/
+/* Skapa en/två media quarys*/
 /*innehåll flex och eller grid layout */
 
 
-/*Gör mobile first styling i huvudkodningen*/
 body {
   text-align: center;
   min-height: 100vh;
@@ -22,7 +21,7 @@ body {
 }
 
 /*Använder mig utav en dark gradient overlay för att lägga till mörkare lager till bakgrundsbilden,
-vilket förbättrar kontrasten på texten så att det syns tydligt*/
+vilket förbättrar kontrasten på texten så att det syns tydligare*/
 
 p {
   color: rgb(15, 226, 233);
@@ -135,7 +134,6 @@ footer img.socialamedia-loggor:hover {
   padding: 1em;
 }
 
-/*stylar kolumnerna lite*/
 #erfarenhet-utbildning .erfarenhet,
 #erfarenhet-utbildning .utbildning {
   background-color: rgba(255, 255, 255, 0.1);
@@ -256,7 +254,7 @@ td {
 
   header img {
     width: 10vw;
-    /*10% av skärmens bredd*/
+    /* 10% av skärmens bredd*/
   }
 
   /*Lägger till horisontell layout och centrerar menyn*/
@@ -273,7 +271,7 @@ td {
     padding: 0;
   }
 
-  /**större storlek på loggorna samt justera footern*/
+  /*större storlek på loggorna samt justera footern*/
   footer a {
     font-size: 2em;
   }
@@ -347,4 +345,4 @@ td {
   }
 }
 
-/*CSS Validerat 2024-09-18 */
+/*CSS Validerat 2024-09-19 */
